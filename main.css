@@ -14,6 +14,14 @@
   src: url("./fonts/opensanscyrilliclatin700.woff2") format("woff2"),
   url("./fonts/opensanscyrilliclatin700.woff") format("woff");
 }
+/* open-sans-condensed-700 - latin */
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url("./fonts/OpenSansCondensedBold.woff2") format("woff2"),
+      url("./fonts/OpenSansCondensedBold.woff") format("woff");
+  font-weight: bold;
+  font-display: swap;
+}
 
 * {
   box-sizing: border-box;
@@ -86,6 +94,8 @@ img {
   opacity: 0.6;
 }
 .header-btn-link {
+  display: inline-block;
+  font-family: 'Open Sans Condensed';
   font-weight: 700;
   font-size: 15px;
   line-height: 150%;
@@ -118,19 +128,31 @@ img {
 
 /* intro start */
 .intro {
-  padding-top: 120px;
-  padding-bottom: 120px;
   background-color: #0eb4c1;
-  background-image: url("./images/hero-img.png");
-  background-repeat: no-repeat;
-  background-position: 847px 29px;
 }
 .intro-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-start {
+  padding-top: 120px;
+  padding-bottom: 120px;
   width: 500px;
+}
+.text-wrapper {
+  width: 440px;
+}
+.doctor-img {
+  display: block;
+  width: 423px;
+  height: 504px;
+  margin-top: 33px;
 }
 .intro-heading {
   margin-top: 0;
   margin-bottom: 16px;
+  font-family: 'Open Sans Condensed';
   font-weight: 700;
   font-size: 36px;
   line-height: 120%;
@@ -153,6 +175,7 @@ img {
 .service-heading {
   margin-top: 0;
   margin-bottom: 56px;
+  font-family: 'Open Sans Condensed';
   font-weight: 700;
   font-size: 36px;
   line-height: 120%;
@@ -178,7 +201,7 @@ img {
   width: 200px;
   height: 200px;
   margin-right: 64px;
-  box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3);
+  box-shadow: 0px 0px 0px -8px rgba(0, 107, 116, 0.3);
   border-radius: 24px;  
 }
 .service-inner-wrapper {
@@ -187,12 +210,13 @@ img {
 .service-inner-heading {
   margin-top: 0;
   margin-bottom: 24px;
+  font-family: 'Open Sans Condensed';
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
   color: #222222;
 }
-.service-text {
+.service-text {  
   line-height: 150%;
   color: #444444;
 }
@@ -208,13 +232,15 @@ img {
   background-color: #0eb4c1;  
 }
 .contact-wrapper {
-  width: 568px;
+  width: 448px;
   margin: auto;
   padding-top: 64px;
   padding-bottom: 64px;
   text-align: center;
 }
 .contact-heading {
+  font-family: 'Open Sans Condensed';
+  font-weight: 700;
   margin-top: 0;
   margin-bottom: 40px;
   font-weight: 700;
@@ -224,6 +250,7 @@ img {
 }
 .contact-link {
   padding: 12px 24px;
+  font-family: 'Open Sans Condensed';
   font-weight: 700;
   font-size: 15px;
   line-height: 120%;
